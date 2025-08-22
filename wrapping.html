@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraordinary Photo Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("P15.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-rows: 260px;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            background: #e0e0e0;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+            filter: brightness(85%);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(100%);
+        }
+
+        .gallery-item:nth-child(7n+1) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item:nth-child(5n+2) {
+            grid-column: span 3;
+        }
+
+        .gallery-item:nth-child(4n+3) {
+            grid-row: span 2;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-auto-rows: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Repeat gallery items for around 60 photos -->
+        <div class="gallery-item"><img src="p30.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="p9.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="p6.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="p53.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="p1.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="p5.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="P7.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="P8.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="P49.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="P9.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="pe16.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="PE10.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="P11.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="P4.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="P12.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="P10.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="P56.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="P15.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="bench doodle.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="P19.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="P18.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="P28.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="P22.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="P21.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="P32.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="chirstmass.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="P37.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="P25.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="P48.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="P3.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="P29.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="P27.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="P24.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="P29.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="P35.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="P26.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="P20.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="P31.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="WhatsApp Image 2025-01-01 at 10.59.47_7c19c419.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="P34.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="P36.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="debu.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="P91.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="P38.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="P44.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="P40.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="P41.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="P43.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="P42.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="p58.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="p54.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="p50.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="p39.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="P46.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="p47.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="p17.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="P59.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="p13.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="p52.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="p55.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="p51.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="p57.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="p61.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="p69.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="p60.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="p45.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="p93.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="p63.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="p73.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="p65.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="p89.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="p64.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="p68.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="PE2.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="p71.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="p67.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="p72.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="p70.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="p74.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="p75.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="p76.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="p62.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="p78.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="p79.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="p92.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="p82.jpg" alt="Photo 6"></div>
+        <div class="gallery-item"><img src="p83.jpg" alt="Photo 7"></div>
+        <div class="gallery-item"><img src="p84.jpg" alt="Photo 8"></div>
+        <div class="gallery-item"><img src="p85.jpg" alt="Photo 9"></div>
+        <div class="gallery-item"><img src="p86.jpg" alt="Photo 10"></div>
+        <div class="gallery-item"><img src="p87.jpg" alt="Photo 1"></div>
+        <div class="gallery-item"><img src="p66.jpg" alt="Photo 2"></div>
+        <div class="gallery-item"><img src="p90.jpg" alt="Photo 3"></div>
+        <div class="gallery-item"><img src="p14.jpg" alt="Photo 4"></div>
+        <div class="gallery-item"><img src="p80.jpg" alt="Photo 5"></div>
+        <div class="gallery-item"><img src="p77.jpg" alt="Photo 6"></div>
+
+        
+    
+        <!-- Add more gallery items as needed -->
+    </div>
+</body>
+</html>
